@@ -12,3 +12,11 @@ Dictionary<key type, value type> nameOfDictionary = new Dictionary<key type, val
 
 access values by putting the key in square brackets
 nameOfDictionary[key];
+
+
+
+key, value pairs can also be added via square bracket syntax:
+nameOfDictionary[key] = value;
+
+
+trying to access a key that isn't in the dictionary it will throw a KeyNotFoundException that can be caught in a try catch block

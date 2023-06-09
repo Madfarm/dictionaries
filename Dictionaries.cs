@@ -11,6 +11,15 @@ class NewThingy
 
         myDic[3] = "Wow";
 
-        System.Console.WriteLine(myDic[3]);
+        // System.Console.WriteLine(myDic[3]);
+
+        try
+        {
+            System.Console.WriteLine(myDic[6]);
+        }
+        catch (KeyNotFoundException)
+        {
+            System.Console.WriteLine("Key not found");
+        }
     }
 }
