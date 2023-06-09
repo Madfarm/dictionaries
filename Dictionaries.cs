@@ -21,5 +21,11 @@ class NewThingy
         {
             System.Console.WriteLine("Key not found");
         }
+
+
+        foreach (KeyValuePair<int, string> kvp in myDic)
+        {
+            System.Console.WriteLine($"{kvp.Key} : {kvp.Value}");
+        }
     }
 }
