@@ -10,6 +10,9 @@ class NewThingy
         myDic.Add(1, "boomshaka");
 
         myDic[3] = "Wow";
+        myDic[12] = "soupy";
+        myDic[8] = "lemon pepper";
+        
         myDic.Remove(3);
         // System.Console.WriteLine(myDic[3]);
 
@@ -34,11 +37,17 @@ class NewThingy
 
         System.Console.WriteLine(output);
 
+        output = "\n" + (myDic.Count > 3 ? "Damn my dict is big" : "Well at least she likes it") + "\n";
+
+        System.Console.WriteLine($"There are {myDic.Count} keys in my dict. {output}");
+
         Dictionary<int, string>.KeyCollection keyColl = myDic.Keys;
 
         foreach (int i in keyColl)
         {
             System.Console.WriteLine(i);
         }
+
+       
     }
 }
