@@ -10,16 +10,16 @@ class NewThingy
         myDic.Add(1, "boomshaka");
 
         myDic[3] = "Wow";
-
+        myDic.Remove(3);
         // System.Console.WriteLine(myDic[3]);
 
         try
         {
-            System.Console.WriteLine(myDic[6]);
+            System.Console.WriteLine(myDic[3]);
         }
         catch (KeyNotFoundException)
         {
-            System.Console.WriteLine("Key not found");
+            System.Console.WriteLine("Key not found\n");
         }
 
 
@@ -27,5 +27,11 @@ class NewThingy
         {
             System.Console.WriteLine($"{kvp.Key} : {kvp.Value}");
         }
+
+
+        string output = "\n" + (myDic.ContainsKey(12) ? "We've got a match!" : "Sugma");
+
+
+        System.Console.WriteLine(output);
     }
 }
