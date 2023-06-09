@@ -20,3 +20,13 @@ nameOfDictionary[key] = value;
 
 
 trying to access a key that isn't in the dictionary it will throw a KeyNotFoundException that can be caught in a try catch block
+
+
+
+### Iterating
+Utilize the KeyValuePair struct in a foreach loop to iterate over a dictionary, access the keys and values via the Key and Value property
+
+foreach (KeyValuePair<key type, value type> kvp in nameOfDictionary)
+{
+    Console.WriteLine($"This is the key{kvp.Key}, and this is the value {kvp.Value}")
+}
