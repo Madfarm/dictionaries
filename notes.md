@@ -8,3 +8,7 @@ A collection consisting of key value pairs
 create one with the following syntax:
 
 Dictionary<key type, value type> nameOfDictionary = new Dictionary<key type, value type>
+
+
+access values by putting the key in square brackets
+nameOfDictionary[key];
