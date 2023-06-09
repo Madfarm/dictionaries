@@ -29,9 +29,16 @@ class NewThingy
         }
 
 
-        string output = "\n" + (myDic.ContainsKey(12) ? "We've got a match!" : "Sugma");
+        string output = "\n" + (myDic.ContainsKey(12) ? "We've got a match!" : "Sugma") + "\n";
 
 
         System.Console.WriteLine(output);
+
+        Dictionary<int, string>.KeyCollection keyColl = myDic.Keys;
+
+        foreach (int i in keyColl)
+        {
+            System.Console.WriteLine(i);
+        }
     }
 }

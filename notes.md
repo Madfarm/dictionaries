@@ -21,9 +21,18 @@ nameOfDictionary[key] = value;
 
 trying to access a key that isn't in the dictionary it will throw a KeyNotFoundException that can be caught in a try catch block
 
-## Checking and Removing
-.ContainsKey(key) - returns a boolean
-.Remove(key)      - removes a given key,value pair
+
+we can grab just the values or just the keys by creating the associated collection and then using the Keys property or the Values property
+
+Dictionary<key type, value type>.ValueCollection valueColl = nameOfDictionary.Values;
+
+### Checking and Removing
+.ContainsKey(key)      - returns a boolean
+.ContainsValue(value)  - return a boolean
+.Remove(key)           - removes a given key,value pair
+
+
+
 
 ### Iterating
 Utilize the KeyValuePair struct in a foreach loop to iterate over a dictionary, access the keys and values via the Key and Value property
