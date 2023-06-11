@@ -12,7 +12,7 @@ class NewThingy
         myDic[3] = "Wow";
         myDic[12] = "soupy";
         myDic[8] = "lemon pepper";
-        
+
         myDic.Remove(3);
         // System.Console.WriteLine(myDic[3]);
 
